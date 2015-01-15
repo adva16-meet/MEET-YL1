@@ -1,0 +1,65 @@
+import turtle
+turtle.penup()
+turtle.goto(-250,250)
+turtle.pendown()
+turtle.goto(-250,-250)
+turtle.goto(250,-250)
+turtle.goto(250,250)
+turtle.goto(-250,250)
+turtle.penup()
+turtle.goto(-250,200)
+turtle.pendown()
+turtle.goto(250,200)
+turtle.penup()
+turtle.goto(6,250)
+turtle.pendown()
+turtle.goto(6,200)
+turtle.penup()
+
+blue = turtle.Turtle()
+blue.pu()
+blue.shape("square")
+blue.shapesize(5,13,1)
+blue.color("blue")
+blue.goto(125,225)
+#turtle.color('blue')
+#turtle.begin_fill()
+#turtle.pendown()
+#turtle.goto(6,250)
+#turtle.goto(250,250)
+#turtle.goto(250,200)
+#turtle.goto(6,200)
+#turtle.penup()
+#turtle.end_fill()
+
+turtle.color('pink')
+turtle.begin_fill()
+turtle.pendown()
+turtle.goto(6,250)
+turtle.goto(-250,250)
+turtle.goto(-250,200)
+turtle.goto(6,200)
+turtle.penup()
+turtle.end_fill()
+
+def  brush_1_circle(x,y):
+     turtle.begin_fill()
+     turtle.color('red')
+     turtle.penup(x,y)
+     turtle.circle(30)
+     turtle.penup()
+     turtle.end_fill()
+	
+
+
+turtle.speed(0)
+turtle.shape("circle")
+turtle.pensize(10)
+turtle.color('pink','red')
+turtle.pendown()
+turtle.ondrag(turtle.goto, btn=1, add=None)
+
+
+
+turtle.mainloop()
+              
